@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+import loadingpic from "../assets/loadingpic.png"
 
 import CharacterList from "../components/CharacterList";
 
@@ -37,16 +38,16 @@ const CharactersPage = () => {
     };
 
 
-    if (loading) { return <h2>Trollar fram karaktärer</h2>; }
+    if (loading){ return <div> <img src={loadingpic} alt="Loading..." />;</div>; }
 
     if (error) { return <h2>{error}</h2>; }
 
 
     return (
 
-        <div>
+        <div className="characters-page">
 
-            <h1>Alla trollkarlar och häxor</h1>
+          
 
             <CharacterList
                 characters={characters}

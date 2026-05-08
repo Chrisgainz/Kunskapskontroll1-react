@@ -37,7 +37,7 @@ const CharacterDetailsPage = () => {
     if (!character) { return (<h2>Ingen karaktär hittades.</h2>); }
 
 
-    return (<CharacterDetails character={character} />
+    return ( <div className="character-details-page"> <CharacterDetails character={character} /> </div>
 
     );
 };

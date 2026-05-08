@@ -5,15 +5,15 @@ const Nav = () => {
 
     return (
 
-        <nav>
+        <nav className="nav">
 
             <NavLink to="/">Hem</NavLink>
 
-            {" - "}
+            {"  "}
 
             <NavLink to="/characters">Karaktärer</NavLink>
 
-             {" - "}
+             {"  "}
 
             <NavLink to="/characters/create">Skapa karaktär</NavLink>
 
