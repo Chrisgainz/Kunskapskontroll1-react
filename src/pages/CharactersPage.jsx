@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 
 import CharacterList from "../components/CharacterList";
 
-import { getAll } from '../api/characterApi'
+import { getAll, deleteCharacter } from '../api/characterApi'
 
 
 const CharactersPage = () => {
@@ -28,6 +28,14 @@ const CharactersPage = () => {
 
     }, []);
 
+    const handleDelete = async (id) => {
+
+        try { const updatedCharacters = await deleteCharacter(characters, id);
+             setCharacters(updatedCharacters); }
+
+        catch (err) { setError(err.message); }
+    };
+
 
     if (loading) { return <h2>Trollar fram karaktärer</h2>; }
 
@@ -42,6 +50,7 @@ const CharactersPage = () => {
 
             <CharacterList
                 characters={characters}
+                onDelete={handleDelete}
             />
 
         </div>

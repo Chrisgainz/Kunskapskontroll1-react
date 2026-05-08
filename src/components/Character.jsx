@@ -1,8 +1,9 @@
 import React from 'react'
 
 import DetailsButton from './DetailsButton'
+import DeleteButton from './DeleteButton'
 
-const Character = ( {character, showDetails = true} ) => {
+const Character = ( {character, showDetails = true, showDelete = true, onDelete} ) => {
   return (
     
     <div className="character-card">
@@ -14,6 +15,8 @@ const Character = ( {character, showDetails = true} ) => {
     <p> Elevhem: {" "} {character.hogwartsHouse} </p>
 
       {showDetails && <DetailsButton id={character.index} />}
+
+      {showDelete &&<DeleteButton id={character.index} onDelete={onDelete} /> }
 
     </div>
   )

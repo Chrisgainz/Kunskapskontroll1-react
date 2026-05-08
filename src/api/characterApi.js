@@ -1,8 +1,6 @@
 import axiosInstance from "./axiosConfig";
 
 
-
-
 export const getAll = async () => {
 
     try {
@@ -19,8 +17,6 @@ export const getAll = async () => {
             );
     }
 };
-
-
 
 
 export const getById = async (id) => {
@@ -43,25 +39,28 @@ export const getById = async (id) => {
 };
 
 
-
-
 export const updateCharacter =
-  async (id, data) => {
+  async (index, data) => {
 
   return {
 
-    ...data, id
+    ...data, index
   };
 };
 
 
-
-
 export const createCharacter = async (data) => {
 
-const newCharacter = { ...data, id: Date.now() };
+const newCharacter = { ...data, index: Date.now() };
 
 return newCharacter };
 
 
+export const deleteCharacter =
+  async (characters, id) => {
 
+  const updatedCharacters = characters.filter(
+      (character) => character.index !== id );
+
+  return updatedCharacters;
+};
