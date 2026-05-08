@@ -2,7 +2,7 @@ import React from 'react'
 
 import Character from "./Character";
 
-const CharacterList = ( {characters} ) => {
+const CharacterList = ( {characters, onDelete} ) => {
     
   return (
     <div className="character-container">
@@ -12,6 +12,7 @@ const CharacterList = ( {characters} ) => {
             
             <Character key={character.index}
             character={character}
+            onDelete={onDelete}
             />
         ))}
 
