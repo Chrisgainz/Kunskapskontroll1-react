@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Nav from "./components/Nav";
 
 import Home from "./pages/Home";
+import CharactersPage from "./pages/CharactersPage"
 
 const App = () => {
 
@@ -15,6 +16,8 @@ const App = () => {
       <Routes>
 
         <Route path="/" element={<Home />}></Route>
+
+        <Route path="/characters" element={<CharactersPage />}></Route>
 
       </Routes>
 
