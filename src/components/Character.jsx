@@ -1,5 +1,7 @@
 import React from 'react'
 
+import DetailsButton from './DetailsButton'
+
 const Character = ( {character} ) => {
   return (
     
@@ -10,6 +12,8 @@ const Character = ( {character} ) => {
     <h2> {character.fullName} </h2>
 
     <p> Elevhem: {" "} {character.hogwartsHouse} </p>
+
+    <DetailsButton id={character.index} />
 
     </div>
   )
