@@ -9,6 +9,10 @@ const Nav = () => {
 
             <NavLink to="/">Hem</NavLink>
 
+            {" - "}
+
+            <NavLink to="/characters">Karaktärer</NavLink>
+
         </nav>
     )
 }
