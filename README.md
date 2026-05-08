@@ -1,16 +1,12 @@
-# React + Vite
+# Hogwarts CRUD app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## INFO
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- av Christoffer Hilleberg
+- En app som hämtar data från API, CRUD funktionalitet finns.
+  Dock så används useState för att simulera utöver GET requests.
+- API : https://github.com/fedeperin/potterapi
+- Inga lösenord osv, installera dependencies bara och kör.
+- Funktionerna är inga fler än de som krävdes för G, CRUD.
+- Säkert fullt med buggar, har inte hittat någon men har inte letat jättemycket heller.
+- Bon appetit.
