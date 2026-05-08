@@ -1,17 +1,19 @@
 import React from 'react'
+import placeholder from "../assets/placeholder.jpg"
 
 const Home = () => {
 
 
 
     return (
-        <div>
+        <div className="home-page">
 
-            <h1>Välkommen till Hogwarts galleri! YAY!</h1>
+            <h1>Välkommen till Hogwarts!</h1>
 
             <br />
 
-            <p>Här kan du titta på en massa olika karaktärer från Harry Potter!</p>
+            <img className="harry-pumper" src={placeholder} alt="Harrypumper" />
+
 
         </div>
     )

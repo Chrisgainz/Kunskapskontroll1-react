@@ -27,7 +27,7 @@ const CreateCharacterPage = () => {
 
     return (
 
-        <div>
+        <div className="create-character-page">
 
             <h2> Skapa en ny karaktär </h2>
 

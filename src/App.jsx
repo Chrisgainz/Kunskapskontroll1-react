@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-import Nav from "./components/Nav";
 
-import Home from "./pages/Home";
-import CharactersPage from "./pages/CharactersPage"
-import CharacterDetailsPage from "./pages/CharacterDetailsPage";
-import CreateCharacterPage from "./pages/CreateCharacterPage";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import PageRoutes from "./components/PageRoutes";
+
+
 
 const App = () => {
 
@@ -13,19 +13,15 @@ const App = () => {
 
     <BrowserRouter>
 
-      <Nav />
+      <Header />
 
-      <Routes>
+      <main>
 
-        <Route path="/" element={<Home />}></Route>
+        <PageRoutes />
 
-        <Route path="/characters" element={<CharactersPage />}></Route>
+      </main>
 
-        <Route path="/characters/:id" element={<CharacterDetailsPage />}></Route>
-
-        <Route path="/characters/create" element={<CreateCharacterPage />}></Route>
-
-      </Routes>
+      <Footer />
 
     </BrowserRouter>
 

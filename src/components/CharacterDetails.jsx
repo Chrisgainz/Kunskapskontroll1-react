@@ -55,7 +55,7 @@ const CharacterDetails = ({ character }) => {
 
     return (
 
-        <div>
+        <div className="character-details">
 
             <img src={editedCharacter.image} alt={editedCharacter.fullName} />
 
@@ -70,7 +70,7 @@ const CharacterDetails = ({ character }) => {
 
             <div>
 
-                <label>Hus:</label>
+                <label>Elevhem:</label>
 
                 <input type="text" name="hogwartsHouse" value={editedCharacter.hogwartsHouse}
                     onChange={handleChange} disabled={!isEditing} />
