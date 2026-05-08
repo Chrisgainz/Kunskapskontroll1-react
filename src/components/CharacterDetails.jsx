@@ -63,13 +63,8 @@ const CharacterDetails = ({ character }) => {
 
                 <label>Namn:</label>
 
-                <input type="text" name="fullName"
-
-                    value={editedCharacter.fullName}
-
-                    onChange={handleChange}
-
-                    disabled={!isEditing} />
+                <input type="text" name="fullName" value={editedCharacter.fullName}
+                    onChange={handleChange} disabled={!isEditing} />
 
             </div>
 
@@ -77,13 +72,8 @@ const CharacterDetails = ({ character }) => {
 
                 <label>Hus:</label>
 
-                <input type="text" name="hogwartsHouse"
-
-                    value={editedCharacter.hogwartsHouse}
-
-                    onChange={handleChange}
-
-                    disabled={!isEditing} />
+                <input type="text" name="hogwartsHouse" value={editedCharacter.hogwartsHouse}
+                    onChange={handleChange} disabled={!isEditing} />
 
             </div>
 
@@ -91,15 +81,8 @@ const CharacterDetails = ({ character }) => {
 
                 <label>Smeknamn:</label>
 
-                <input
-                    type="text"
-                    name="nickname"
-
-                    value={editedCharacter.nickname}
-
-                    onChange={handleChange}
-
-                    disabled={!isEditing} />
+                <input type="text" name="nickname" value={editedCharacter.nickname}
+                    onChange={handleChange} disabled={!isEditing} />
 
             </div>
 
@@ -107,13 +90,8 @@ const CharacterDetails = ({ character }) => {
 
                 <label>Spelad av:</label>
 
-                <input type="text" name="interpretedBy"
-
-                    value={editedCharacter.interpretedBy}
-
-                    onChange={handleChange}
-
-                    disabled={!isEditing} />
+                <input type="text" name="interpretedBy" value={editedCharacter.interpretedBy}
+                    onChange={handleChange} disabled={!isEditing} />
 
             </div>
 
@@ -121,13 +99,8 @@ const CharacterDetails = ({ character }) => {
 
                 <label>Bild URL:</label>
 
-                <input type="text" name="image"
-
-                    value={editedCharacter.image}
-
-                    onChange={handleChange}
-
-                    disabled={!isEditing} />
+                <input type="text" name="image" value={editedCharacter.image}
+                    onChange={handleChange} disabled={!isEditing} />
 
             </div>
 

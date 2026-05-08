@@ -13,6 +13,10 @@ const Nav = () => {
 
             <NavLink to="/characters">Karaktärer</NavLink>
 
+             {" - "}
+
+            <NavLink to="/characters/create">Skapa karaktär</NavLink>
+
         </nav>
     )
 }

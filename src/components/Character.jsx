@@ -2,7 +2,7 @@ import React from 'react'
 
 import DetailsButton from './DetailsButton'
 
-const Character = ( {character} ) => {
+const Character = ( {character, showDetails = true} ) => {
   return (
     
     <div className="character-card">
@@ -13,7 +13,7 @@ const Character = ( {character} ) => {
 
     <p> Elevhem: {" "} {character.hogwartsHouse} </p>
 
-    <DetailsButton id={character.index} />
+      {showDetails && <DetailsButton id={character.index} />}
 
     </div>
   )

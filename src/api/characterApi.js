@@ -1,6 +1,8 @@
 import axiosInstance from "./axiosConfig";
 
 
+
+
 export const getAll = async () => {
 
     try {
@@ -17,6 +19,8 @@ export const getAll = async () => {
             );
     }
 };
+
+
 
 
 export const getById = async (id) => {
@@ -38,6 +42,9 @@ export const getById = async (id) => {
     }
 };
 
+
+
+
 export const updateCharacter =
   async (id, data) => {
 
@@ -46,5 +53,15 @@ export const updateCharacter =
     ...data, id
   };
 };
+
+
+
+
+export const createCharacter = async (data) => {
+
+const newCharacter = { ...data, id: Date.now() };
+
+return newCharacter };
+
 
 
